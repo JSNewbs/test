@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://mylinux.langara.bc.ca/~bgreen/201630/1045/lecs/basic-framework.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lab 7</title>
+	
+	<link href="./lab7_files/normalize.min.css" rel="stylesheet" type="text/css">
+    <!-- Other stylesheets may go here -->
+    <link href="./lab7_files/Lab1Formatted.css" rel="stylesheet" type="text/css">
+	<!-- Any citations should go here -->
+    <script src="lab7.js" defer></script>
+	<script src="lab7b.js" defer></script>
+	
+</head>
+<body onload="reset();">
+<main>
+
+<!-- place your HTML code within the main -->
+    <section id="movingCat">
+        
+		<h1>Cat Mover</h1>
+		<p>Warning: please use IE/firefox to test this program. The cat may jump crazily in Chrome if you click too many times!!!</p>
+        <p>The bug has been discussed on Stak Overflow and preported to google chrome supoort</p>
+        <p>
+        <a href="http://stackoverflow.com/questions/40276198/i-wrote-a-javascript-to-move-a-cat-on-canvas-%E0%B8%85%CE%A6%CF%89%CE%A6-%E0%B8%85-but-the-cat-jumps-wei/40277801?noredirect=1#comment67815776_40277801">Stack Overflow Discussion</a>
+        <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=659915">Google Chrome Support</a>
+        </p>
+        
+	    <canvas width="400" height="400" id="drawingArea1" style="border:solid">cat image</canvas>
+    <p>
+        <input type="button" id="resetBtn" value="reset" onclick="reset();" />    
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" id="upBtn" value="Up" onclick="moveUp();"/>    
+    </p>
+    <p>
+        <input type="button" id="leftBtn" value="Left" onclick="moveLeft();"/> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" id="rightBtn" value="Right" onclick="moveRight();"/>    
+    </p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" id="downBtn" value="Down" onclick="moveDown();"/>    
+    </p>	
+	</section>
+
+	<section id="bottle">
+        
+		<h2>Water Bottle Simulator</h2>
+        
+		<canvas width="400" height="400" id="drawingArea2" style="border:solid">cat image</canvas>
+        
+		<p>New Bottle 1 Size:
+			<input type="text" value="2" id="bottle1Input"/>
+			<input type="button" value="Change Size" id="bottle1Change" onclick="changeSize1();"/>
+			<input type="button" value="Empty Bottle 1" id="bottle1Empty" onclick="emptyBottle1();"/>
+			<input type="button" value="Fill Bottle 1" id="bottle1Fill" onclick="fillBottle1();"/>
+			<input type="button" value="Transfer to Bottle 2" id="bottle1Transfer" onclick="TransBottle1();"/>
+		</p>
+        
+		<p>New Bottle 2 Size:
+			<input type="text" value="2" id="bottle2Input"/>
+			<input type="button" value="Change Size" id="bottle2Change" onclick="changeSize2()"/>
+			<input type="button" value="Empty Bottle 2" id="bottle2Empty" onclick="emptyBottle2()" />
+			<input type="button" value="Fill Bottle 2" id="bottle2Fill" onclick="fillBottle2();"/>
+			<input type="button" value="Transfer to Bottle 1" id="bottle2Transfer" onclick="TransBottle2();"/>
+		</p>
+		
+	</section>
+</main>
+
+</body></html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://mylinux.langara.bc.ca/~bgreen/201630/1045/lecs/basic-framework.html -->
+<html lang="en" class="gr__mylinux_langara_bc_ca"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Vowel Frequency Chart</title>
+	
+	<link href="./lab8_files/normalize.min.css" rel="stylesheet" type="text/css">
+    <!-- Other stylesheets may go here -->
+    <link href="./lab8_files/Lab1Formatted.css" rel="stylesheet" type="text/css">
+	<!-- Any citations should go here -->
+    <script src="lab8.js" defer></script>
+</head>
+    
+<body data-gr-c-s-loaded="true" onload="updateWordLst();">
+<main>
+    <h1>Vowel Frequency Chart</h1>
+    <p>
+        <canvas width="400" height="400" id="chart" style="border">This is a chart</canvas>
+        <input type="button" value="Generate Graph" onclick="generateGraph(wordLst);"/>
+    </p>
+    <h2>Word List</h2>
+    <p id="words">test,test</p>
+    <p>
+        <input type="text" value="nice" id="input_text"/>
+        <input type="button" value = "Add Word" id="add_word" onclick="addWord(wordLst);"/>
+        <input type="button" value = "Erase Last Word" id="erase_last_word" onclick="eraseLastWord(wordLst);"/>
+        <input type="button" value = "Erase All Words" id="erase_all_words" onclick="eraseAllWords();"/>
+    </p>
+<!-- place your HTML code within the main -->
+
+</main>
+
+</body></html>
