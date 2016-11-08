@@ -1,6 +1,6 @@
 # Lab 7 
-Cat Mover and Water puzzle
+猫猫移动器/水瓶谜题
 
 # Lab 8
-Vowel calculator
+元音统计器
 
